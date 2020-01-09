@@ -1,0 +1,98 @@
+#include <iostream>
+//#include <vector>
+//#include <string.h>
+//#include <algorithm>
+//#include <stdio.h>
+//#include "STU_MAG_SYS.h"
+void STU_MAG_SYS();
+void STU_COURS_SYS();
+void STU_QUERY_SYS();
+/*   *教务管理系统*
+  模块一：学生个人信息模块；包含学生信息的
+		  录入，删除，修改，阅读，导出功能
+
+  模块二：课程管理；包含选课，退课，
+		  课程时间安排
+
+  模块三：查询模块：按名字查询，按学号
+		  查询，按身份证号查询
+*/
+using namespace std;
+/*class STUDENT                  //定义类
+{
+  public:
+	string std_name;           //名字
+	string std_sex;            //性别
+	string std_college;        //学院
+	int std_ID;                //学生身份证号
+	int std_sch_ID;            //学号
+
+	string std_course;         //课程名字
+	float std_score;           //课程成绩
+	float std_credit;          //课程学分
+	float std_weight_credit;   //加权学分绩
+};
+class MANAGER
+{
+	string MAG_name;           //管理员名字
+	string MAG_depart;         //管理员部门
+	int MAG_ID;                //管理员身份证号
+	int MAG_word_ID;           //管理员工号
+public:
+	void STU_MAG_SYS();         // 学生信息管理系统入口函数
+	void STU_COURS_SYS();       // 学生课程管理入口函数
+	void STU_QUERY_SYS();       // 学生成绩查询入口函数
+};*/
+int main(int argc, char *argv[])
+{
+
+	char select;
+	while (1)
+	{
+		cout << "====================================" << endl;
+		cout << "欢迎来到北京理工大学教务管理系统" << endl;
+		cout << "        1 学生信息管理          " << endl;
+		cout << "        2 学生课程管理          " << endl;
+		cout << "        3 学生成绩查询          " << endl;
+		cout << "        4.退出管理系统          " << endl;
+		cout << "====================================" << endl;
+		cout << "     输入相应的序号进行操作：    " << endl;
+		cin >> select;
+		switch (select)
+		{
+		case '1':
+			STU_MAG_SYS();
+			break;
+		case '2':
+			STU_COURS_SYS();
+			break;
+		case '3':
+			STU_QUERY_SYS();
+			break;
+		case '4':
+			exit(0);
+			break;
+
+
+		}
+	}
+	return 0;
+}
+
+
+void STU_MAG_SYS()
+{
+	cout << "你很棒" << endl;
+
+}
+void STU_COURS_SYS()
+{
+	cout << "是谁，我在哪里?" << endl;
+}
+
+
+// 学生课程管理入口函数
+void STU_QUERY_SYS()
+{
+	cout << ("学生成绩查询系统") << endl;
+}
